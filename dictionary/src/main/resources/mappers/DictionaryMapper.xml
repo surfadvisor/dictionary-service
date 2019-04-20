@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bsm.dict.dao.DictionaryRepository">
+
+  <resultMap id="DictItemMap" type="com.bsm.dict.api.model.DictionaryItem">
+    <result property="key" column="item_name"/>
+    <result property="lang" column="lang_iso"/>
+    <result property="value" column="item_value"/>
+  </resultMap>
+
+  <select id="selectDictionary" resultMap="DictItemMap">
+    select item_name, lang_iso, item_value
+    from dict_item where
+    dict_name = #{dictKey}
+    <if test="lang != null">
+      and lang_iso = #{lang}
+    </if>
+  </select>
+
+</mapper>

@@ -14,7 +14,7 @@ spring:
 # Database
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://db.bsm.pub:5432/core
+    url: jdbc:postgresql://db.bsm.pub:5432/dictionary
     username: bsm_dictionary
     password: bsm_dictionary
   jpa:
@@ -40,3 +40,6 @@ logging:
     org.springframework.web: DEBUG
     com.bsm: DEBUG
   path: /logs
+
+logbook:
+  format.style: http

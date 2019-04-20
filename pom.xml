@@ -5,6 +5,8 @@
   <packaging>pom</packaging>
   <modules>
     <module>application</module>
+    <module>dictionary-api</module>
+    <module>dictionary</module>
   </modules>
   <parent>
 		<groupId>org.springframework.boot</groupId>
@@ -59,6 +61,10 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-zipkin</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-rest</artifactId>
 		</dependency>
 
 		<dependency>

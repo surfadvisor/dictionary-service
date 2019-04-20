@@ -1,3 +1,4 @@
+impl GET /dictionary/{dictionaryKey}/{lang}
 DICT_ITEM table and its merge procedure
 initial mvn & spring setup
 Spring Initializr
