@@ -1,3 +1,4 @@
+report sm screen buttons labels
 report side mission screen labels
 mobile app main screen options labels
 move lang from path to param, GET /dictionary/{dictionaryKey}?lang
