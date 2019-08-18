@@ -1,6 +1,5 @@
-package com.bsm.dict.api.model;
+package com.surf.advisor.dict.api.model;
 
-import javax.validation.constraints.Max;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;

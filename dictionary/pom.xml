@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
-    <artifactId>bsm-dictionary</artifactId>
-    <groupId>com.bsm.dict</groupId>
+    <artifactId>surf-dictionary</artifactId>
+    <groupId>com.surf.advisor.dict</groupId>
     <version>0.0.2-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
@@ -10,7 +10,7 @@
   <artifactId>dictionary</artifactId>
   <dependencies>
     <dependency>
-      <groupId>com.bsm.dict</groupId>
+      <groupId>com.surf.advisor.dict</groupId>
       <artifactId>dictionary-api</artifactId>
       <version>${project.version}</version>
     </dependency>

@@ -1,4 +1,4 @@
-package com.bsm.dict;
+package com.surf.advisor.dict;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

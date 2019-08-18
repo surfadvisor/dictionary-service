@@ -1,8 +1,8 @@
-package com.bsm.dict.impl;
+package com.surf.advisor.dict.impl;
 
-import com.bsm.dict.api.model.DictionaryItem;
-import com.bsm.dict.api.service.IDictionaryService;
-import com.bsm.dict.dao.DictionaryRepository;
+import com.surf.advisor.dict.api.model.DictionaryItem;
+import com.surf.advisor.dict.api.service.IDictionaryService;
+import com.surf.advisor.dict.dao.DictionaryRepository;
 import java.util.List;
 import javax.validation.constraints.NotBlank;
 import lombok.RequiredArgsConstructor;

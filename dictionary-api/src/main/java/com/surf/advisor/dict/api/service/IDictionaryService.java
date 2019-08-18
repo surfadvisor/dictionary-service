@@ -1,6 +1,6 @@
-package com.bsm.dict.api.service;
+package com.surf.advisor.dict.api.service;
 
-import com.bsm.dict.api.model.DictionaryItem;
+import com.surf.advisor.dict.api.model.DictionaryItem;
 import java.util.List;
 import javax.validation.constraints.NotBlank;
 
