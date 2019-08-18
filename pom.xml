@@ -25,6 +25,7 @@
 		<spring-cloud.version>Greenwich.SR1</spring-cloud.version>
 
 		<mvn.release.plugin.version>2.5.3</mvn.release.plugin.version>
+		<aws.sdk.dynamodb.version>1.11.613</aws.sdk.dynamodb.version>
 
 		<!-- logging -->
 		<zalando.logbook.version>1.5.0</zalando.logbook.version>
@@ -42,6 +43,12 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-rest</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-java-sdk-dynamodb</artifactId>
+			<version>${aws.sdk.dynamodb.version}</version>
 		</dependency>
 
 		<dependency>

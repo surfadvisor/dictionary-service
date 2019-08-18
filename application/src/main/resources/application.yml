@@ -15,6 +15,15 @@ spring:
   jackson:
     default-property-inclusion: non_null
 
+# AWS
+amazon:
+  access:
+    key: ${AWS_ACCESS_KEY_ID}
+    secret-key: ${AWS_SECRET_ACCESS_KEY}
+  region: ${AWS_DEFAULT_REGION}
+  end-point:
+    url: dynamodb.${AWS_DEFAULT_REGION}.amazonaws.com
+
 # Logger configuration
 logging:
   level:
