@@ -1,0 +1,27 @@
+# Server configuration
+server:
+  port: 5001
+  servlet:
+    context-path: /dictionary
+
+
+# Spring Boot configuration
+spring:
+  application:
+    name: dictionary
+  output:
+    ansi:
+      enabled: always
+  jackson:
+    default-property-inclusion: non_null
+
+# Logger configuration
+logging:
+  level:
+    org.zalando.logbook: TRACE
+    org.springframework.web: DEBUG
+    com.bsm: DEBUG
+  path: /logs
+
+logbook:
+  format.style: http

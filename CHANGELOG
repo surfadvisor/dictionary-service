@@ -1,0 +1,9 @@
+rate side mission report screen labels
+report sm screen buttons labels
+report side mission screen labels
+mobile app main screen options labels
+move lang from path to param, GET /dictionary/{dictionaryKey}?lang
+impl GET /dictionary/{dictionaryKey}/{lang}
+DICT_ITEM table and its merge procedure
+initial mvn & spring setup
+Spring Initializr
