@@ -9,7 +9,9 @@ import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBQueryExpression;
 import com.surf.advisor.dict.api.model.DictionaryItem;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Repository;
 
+@Repository
 @RequiredArgsConstructor
 public class DynamoDbDictionaryDao implements DictionaryRepository {
 

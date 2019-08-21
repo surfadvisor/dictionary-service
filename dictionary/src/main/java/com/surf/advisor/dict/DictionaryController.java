@@ -26,4 +26,9 @@ public class DictionaryController {
     return dictionaryService.getDictionary(dictionaryKey, lang);
   }
 
+  @GetMapping("/health-check")
+  public String healthCheck() {
+    return "ok";
+  }
+
 }
