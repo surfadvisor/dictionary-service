@@ -19,6 +19,12 @@
 	<name>dictionary</name>
 	<description>BSM Dictionary microservice</description>
 
+	<scm>
+		<url>https://github.com/surfadvisor/dictionary-service</url>
+		<connection>scm:git:https://github.com/surfadvisor/dictionary-service</connection>
+		<developerConnection>scm:git:https://github.com/surfadvisor/dictionary-service</developerConnection>
+	</scm>
+
 
 	<properties>
 		<java.version>11</java.version>
