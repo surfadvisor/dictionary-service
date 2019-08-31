@@ -15,7 +15,7 @@
 	</parent>
 	<groupId>com.surf.advisor.dict</groupId>
 	<artifactId>surf-dictionary</artifactId>
-	<version>0.0.2</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<name>dictionary</name>
 	<description>BSM Dictionary microservice</description>
 
@@ -23,7 +23,7 @@
 		<url>https://github.com/surfadvisor/dictionary-service</url>
 		<connection>scm:git:https://github.com/surfadvisor/dictionary-service</connection>
 		<developerConnection>scm:git:https://github.com/surfadvisor/dictionary-service</developerConnection>
-	  <tag>surf-dictionary-0.0.2</tag>
+	  <tag>HEAD</tag>
   </scm>
 
 
