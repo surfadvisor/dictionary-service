@@ -17,7 +17,7 @@
 	<artifactId>surf-dictionary</artifactId>
 	<version>0.0.3-SNAPSHOT</version>
 	<name>dictionary</name>
-	<description>BSM Dictionary microservice</description>
+	<description>SurfAdvisor dictionary microservice</description>
 
 	<scm>
 		<url>https://github.com/surfadvisor/dictionary-service</url>

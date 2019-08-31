@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: dictionary
-          image: surfadvisor/dictionary:latest
+          image: <X>
           ports:
             - containerPort: 5001
 
@@ -54,4 +54,4 @@ spec:
       port: 5001
       targetPort: 5001
       protocol: TCP
-  type: NodePort
+  type: ClusterIP
