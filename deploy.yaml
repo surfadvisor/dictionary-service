@@ -18,6 +18,10 @@ spec:
           ports:
             - containerPort: 5001
 
+          resources:
+            requests:
+              cpu: 100m
+
           envFrom:
             - secretRef:
                 name: dict-dynamodb-secrets
@@ -55,3 +59,18 @@ spec:
       targetPort: 5001
       protocol: TCP
   type: ClusterIP
+
+---
+
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: dictionary
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: dictionary
+  minReplicas: 1
+  maxReplicas: 10
+  targetCPUUtilizationPercentage: 50

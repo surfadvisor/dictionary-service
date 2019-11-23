@@ -1,6 +1,13 @@
 
 def defaults = [:]
 defaults['version'] = '0.0.2'
+
+properties([
+  parameters([
+    string(defaultValue: defaults['version'], description: 'service version?', name: 'version')
+  ])
+])
+
 def version = params.version == null ? defaults['version'] : params.version
 
 def label = "worker-${UUID.randomUUID().toString()}"
@@ -21,9 +28,6 @@ volumes: [
 ]) {
 
   node(label) {
-    parameters {
-       string(defaultValue: defaults['version'], description: 'Dictionary version?', name: 'version')
-    }
 
     stage('Clone git') {
           git credentialsId: 'jenkins-github', url: "https://github.com/surfadvisor/dictionary-service"
